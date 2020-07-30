@@ -1,65 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.17.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.17.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.17.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.17.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.17.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani&Concert+One&display=swap" rel="stylesheet">
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <div class="main-header" id="main-header">
+    <nav class="navbar mynav navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span
+              class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href="#hello">Proflie</a> </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#picture">Picture</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="banner" id="hello">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="banner-text">
+            <h1>HELLO! DO YOU KNOW ABOUT ME?</h1>
+          </div>
+        </div>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </div>
+  <div class="bg-sig">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-sm-4">
+          <br><br><br><br><br><img src="images/me1.jpg" class="img-circle" alt="Cinque Terre" width="300"
+            height="300"><br><br>
+        </div>
+        <div class="col-md-6 col-sm-6" style="color : rgb(0, 0, 0)">
+          <div id="about">
+            <br><br><br>
+            <h3>Let me introduce my self<br><br></h3>
+            <h4>My Name is Kamolnut Sukumin & Nickname Fai </p>
+              <p> I was born on Monday 16 th of August 1999.</p>
+              <p>I am 20 years old.</p>
+              <p> I have a sister.</p>
+              <p> My hobbies are surfing the internet, watching movies and reading fiction.<br></p>
+              <p>I like cat and cactus.</p><br>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="picture" class="portfolio">
+      <div class="container">
+        <div class="col-lg-10 col-lg-offset-1 text-center text">
+          <h2>Picture</h2>
+          <div class="row">
+            <div class="col-md-6 col-sm-6 ">
+              <div class="portfolio-item"> <a href="#"> <img class="img-portfolio img-responsive" src="images/gr.jpg">
+                </a> </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="portfolio-item"> <a href="#"> <img class="img-portfolio img-responsive" src="images/gr2.jpg">
+                </a> </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="portfolio-item"> <a href="#"> <img class="img-portfolio img-responsive" src="images/gr3.jpg">
+                </a> </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="portfolio-item"> <a href="#"> <img class="img-portfolio img-responsive" src="images/gr4.jpg">
+                </a> </div>
+            </div>
+            <div class="col-md col-sm">
+              <div class="portfolio-item"> <a href="#"> <img class="img-portfolio img-responsive" src="images/gr8.jpg ">
+                </a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <footer>
+      <div id="contact" class="container">
+        <div class="row">
+          <h2>Contact </h2><br>
+          <div class="col-md"> </div>
+          <div class="col-md ">
+            <ul class="list-inline social-buttons">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121691.76319197382!2d99.12610899271012!3d17.609020955879252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30dea78f45f424fd%3A0x40346c5fa8b9db0!2z4LiV4Liz4Lia4LilIOC4peC5ieC4reC4oeC5geC4o-C4lCDguK3guLPguYDguKDguK3guYDguJbguLTguJkg4Lil4Liz4Lib4Liy4LiHIDUyMTYw!5e0!3m2!1sth!2sth!4v1596085950437!5m2!1sth!2sth"
+                width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+              <div class="starter-template">
+                <br><a target="_facebook" href="https://www.facebook.com/kamolnut.sukumin.1/"><img src="images/fa.png"
+                    width="50" &nbsp></a>
+                <a target="_instagram" href="https://www.instagram.com/hmm.sometime_/"><img src="images/ig.png"
+                    width="50"></a>
+                <a target="_gmail" href="mailto:gameger005@gmail.com"><img src="images/gmail.png" width="50"></a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+</body>
+
 </html>
